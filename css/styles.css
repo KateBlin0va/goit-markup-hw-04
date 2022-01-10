@@ -110,6 +110,10 @@ img {
   color: var(--accent-color);
 }
 
+.header-contact-icon {
+  fill: currentColor;
+}
+
 .header-nav .link.current {
   color: var(--accent-color);
   display: flex;
@@ -132,17 +136,33 @@ img {
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  padding-top: 32px;
   color: var(--text-color);
+  align-items: center;
 }
 
 .header-mail {
+  display: flex;
+  align-items: center;
   margin-right: 50px;
 }
 
-.header-contact-item {
+.header-tel {
   display: flex;
   align-items: center;
-  color: var(--text-color);
+}
+
+.header-contact-icon:hover,
+.header-contact-icon:focus {
+  color: var(--accent-color);
+}
+
+.header-contact-icon {
+  display: flex;
+  fill: currentColor;
+  align-items: center;
+  margin-right: 10px;
 }
 
 /* HERO */
@@ -444,6 +464,8 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background: #2f303a;
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -482,6 +504,15 @@ img {
   margin-bottom: 9px;
 }
 
+.container-footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.right-container {
+  margin-left: 70px;
+}
+
 .right-footer-tittle {
   font-family: 'Roboto' sans-serif;
   font-weight: 700;
@@ -512,7 +543,9 @@ img {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
   color: var(--extra-color);
+  margin-top: 20px;
 }
 
 .right-footer-icon {
@@ -542,6 +575,7 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
+  border-color: #f5f4fa;
   padding: 6px 22px;
 }
 
@@ -596,4 +630,9 @@ img {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+}
+
+.works-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
