@@ -321,6 +321,9 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.team-section {
   background-color: #f5f4fa;
 }
 
@@ -572,7 +575,7 @@ img {
 .btn {
   background-color: #f5f4fa;
   border-radius: 4px;
-  outline: none;
+  border: none;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
